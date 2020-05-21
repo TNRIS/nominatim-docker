@@ -52,7 +52,7 @@
   Now you will have a fully functioning nominatim instance available at : [http://localhost:7070/](http://localhost:7070).
 
 
-# Update
+## Update
 
 Full documentation for Nominatim update available [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For a list of other methods see the output of:
   ```
