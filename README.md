@@ -1,9 +1,9 @@
 # Nominatim Docker (Nominatim version 3.4)
 
 1. Build
-  ```
-  docker build -t nominatim .
-  ```
+   ```
+   docker build -t nominatim .
+   ```
 2. Copy <your_country>.osm.pbf to a local directory (i.e. /home/me/nominatimdata). The osm.pbf files can be obtained from
    geofabrik's website at: [https://download.geofabrik.de/index.html](https://download.geofabrik.de/index.html). For general
    dev purposes, the file for Monaco is typically used as it is very small. The data loading process can be very time consuming.
@@ -44,10 +44,10 @@
    ```
 
 6. Configure incremental update. By default CONST_Replication_Url configured for Monaco.
-If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For example, to use the daily regional extracts diffs for Texas from geofabrik add the following:
-  ```
-  @define('CONST_Replication_Url', 'https://download.geofabrik.de/north-america/us/texas-updates');
-  ```
+   If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For example, to use the daily regional extracts diffs for Texas from geofabrik add the following:
+   ```
+   @define('CONST_Replication_Url', 'https://download.geofabrik.de/north-america/us/texas-updates');
+   ```
 
   Now you will have a fully functioning nominatim instance available at : [http://localhost:7070/](http://localhost:7070).
 
