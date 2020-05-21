@@ -10,7 +10,7 @@ We are using the latest version of nominatim, v3.4. The nominatim project can be
    ```
    docker build -t nominatim .
    ```
-   
+
 1. Copy <your_country>.osm.pbf to a local directory (i.e. /home/me/nominatimdata). The osm.pbf files can be obtained from
    geofabrik's website at [https://download.geofabrik.de/index.html](https://download.geofabrik.de/index.html). For general
    dev purposes, the file for Monaco is typically used as it is very small. The data loading process can be very time consuming.
@@ -89,7 +89,7 @@ The production setup uses the build steps from above to build the image and run 
    mkdir /home/ec2-user/nominatimdata
    ```
 
-1. Navigate to the nominatimdata directory and copy texas-latest.osm.pbf to a local directory (i.e. /home/me/nominatimdata). The osm.pbf file can be obtained from
+1. Navigate to the nominatimdata directory and copy texas-latest.osm.pbf to a local directory (i.e. /home/ec2-user/nominatimdata). The osm.pbf file can be obtained from
    geofabrik's website at [https://download.geofabrik.de/north-america/us/texas.html](https://download.geofabrik.de/north-america/us/texas.html).
 
    ```
