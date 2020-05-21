@@ -5,7 +5,7 @@ Nominatim (from the Latin, 'by name') is a tool to search OpenStreetMap data by 
 ## Production configuration
 
 
-## Build/Setup
+## General Build/Setup
 The setup and build steps below are taken from the project [https://github.com/mediagis/nominatim-docker](https://github.com/mediagis/nominatim-docker).
 We are using the latest version of nominatim, v3.4. The nominatim project can be found [here](https://github.com/osm-search/Nominatim) and the documentation is found [here](https://nominatim.org/release-docs/develop/). You can follow these steps to get things running on your local machine for testing/dev.
 
@@ -52,10 +52,10 @@ We are using the latest version of nominatim, v3.4. The nominatim project can be
    docker run --restart=always -p 7070:8080 -d -v /home/me/nominatimdata/conf:/data nominatim sh /app/startapache.sh
    ```
 
-6. Configure incremental update. By default CONST_Replication_Url configured for Monaco.
-   If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For example, to use the daily regional extracts diffs for Texas from geofabrik add the following:
+6. Configure incremental update. By default CONST_Replication_Url in local.php has been configured for Texas.
+   If you want a different update source, you will need to declare `CONST_Replication_Url` in local.php. Documentation [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For example, to use the daily country extracts diffs for Monaco from geofabrik add the following:
    ```
-   @define('CONST_Replication_Url', 'https://download.geofabrik.de/north-america/us/texas-updates');
+   @define('CONST_Replication_Url', 'https://download.geofabrik.de/europe/monaco-updates');
    ```
 
   Now you will have a fully functioning nominatim instance available at : [http://localhost:7070/](http://localhost:7070).
