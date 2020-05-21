@@ -1,11 +1,20 @@
 # Nominatim Docker (Nominatim version 3.4)
+Nominatim (from the Latin, 'by name') is a tool to search OpenStreetMap data by name and address (geocoding) and to generate synthetic addresses of OSM points (reverse geocoding). An instance with up-to-date data can be found at https://nominatim.openstreetmap.org. Nominatim is also used as one of the sources for the Search box on the OpenStreetMap home page.
+
+
+## Production configuration
+
+
+## Build/Setup
+The setup and build steps below are taken from the project [https://github.com/mediagis/nominatim-docker](https://github.com/mediagis/nominatim-docker).
+We are using the latest version of nominatim, v3.4. The nominatim project can be found [here](https://github.com/osm-search/Nominatim) and the documentation is found [here](https://nominatim.org/release-docs/develop/). You can follow these steps to get things running on your local machine for testing/dev.
 
 1. Build
    ```
    docker build -t nominatim .
    ```
 2. Copy <your_country>.osm.pbf to a local directory (i.e. /home/me/nominatimdata). The osm.pbf files can be obtained from
-   geofabrik's website at: [https://download.geofabrik.de/index.html](https://download.geofabrik.de/index.html). For general
+   geofabrik's website at [https://download.geofabrik.de/index.html](https://download.geofabrik.de/index.html). For general
    dev purposes, the file for Monaco is typically used as it is very small. The data loading process can be very time consuming.
    It takes ~1.5-2 hrs just to load Texas into the database, depending on your system's specifications.
 
