@@ -62,13 +62,18 @@ We are using the latest version of nominatim, v3.4. The nominatim project can be
   Now you will have a fully functioning nominatim instance available at : [http://localhost:7070/](http://localhost:7070).
 
 
-## Update
+## Updating Nominatim DB
 
-Full documentation for Nominatim update available [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For a list of other methods see the output of:
+Full documentation for Nominatim updates available [here](https://github.com/openstreetmap/Nominatim/blob/master/docs/admin/Import-and-Update.md#updates). For a list of other methods see the output of:
 
   ```
   docker exec -it nominatim sudo -u postgres ./src/build/utils/update.php --help
   ```
+
+The following command must be run once to set up the updates process before the updates can begin:
+  ```
+  docker exec -it nominatim sudo -u postgres ./src/build/utils/update.php --init-updates
+  ``` 
 
 The following command will keep your database constantly up to date:
 
