@@ -75,6 +75,12 @@ The following command must be run once to set up the updates process before the 
   docker exec -it nominatim sudo -u postgres ./src/build/utils/update.php --init-updates
   ``` 
 
+The following command will update the nominatim database with the most recent osm changes:
+
+  ```
+  docker exec -it nominatim sudo -u postgres ./src/build/utils/update.php --import-osmosis
+  ```
+
 The following command will keep your database constantly up to date:
 
   ```
