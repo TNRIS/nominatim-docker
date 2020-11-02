@@ -3,7 +3,7 @@ Nominatim (from the Latin, 'by name') is a tool to search OpenStreetMap data by 
 
 ## General Build/Setup
 The setup and build steps below are taken from the project [https://github.com/mediagis/nominatim-docker](https://github.com/mediagis/nominatim-docker).
-We are using the latest version of nominatim, v3.4. The nominatim project can be found [here](https://github.com/osm-search/Nominatim) and the documentation is found [here](https://nominatim.org/release-docs/develop/). You can follow these steps to get things running on your local machine for testing/dev.
+We are using v3.4 of Nominatim. The nominatim project can be found [here](https://github.com/osm-search/Nominatim) and the documentation is found [here](https://nominatim.org/release-docs/develop/). You can follow these steps to get things running on your local machine for testing/dev.
 
 1. Build the image
 
